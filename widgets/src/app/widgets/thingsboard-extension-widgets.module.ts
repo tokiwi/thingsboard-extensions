@@ -11,6 +11,7 @@ import { SharedModule } from '@shared/public-api';
 import { HomeComponentsModule } from '@home/components/public-api';
 import { ExampleMap } from './components/map/example-map.component';
 import { CustomAlarmsTableWidgetComponent } from './components/alarm/custom-alarms-table-widget.component';
+import { AltisEntitiesHierarchyWidgetModule } from './components/altis-entities-hierarchy/altis-entities-hierarchy-widget.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CustomAlarmsTableWidgetComponent } from './components/alarm/custom-alar
   exports: [
     ExampleMap,
     ExampleModule,
-    CustomAlarmsTableWidgetComponent
+    CustomAlarmsTableWidgetComponent,
+    AltisEntitiesHierarchyWidgetModule
   ]
 })
 export class ThingsboardExtensionWidgetsModule {
